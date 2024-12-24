@@ -215,8 +215,6 @@ class BoardTileServiceUtils:
                 GameDifficulty(game.difficulty),
                 inspected_tiles_positions,
             )
-            print("CURRENT TILE POSITION", tile_position)
-            print("ADJACENT TILES POSITIONS", adjacent_tiles_positions)
 
             base_q_condition = Q(game_id=game_id, state__isnull=True)
             q_conditions = [
@@ -226,8 +224,6 @@ class BoardTileServiceUtils:
 
             adjacent_tiles = BoardTile.objects.filter(reduce(or_, q_conditions))
             mines = [tile for tile in adjacent_tiles if tile.value == 9]
-            print("ADJACENT TILES", adjacent_tiles)
-            print("MINES", mines)
 
             if len(mines) == 0:
                 for tile in adjacent_tiles:
