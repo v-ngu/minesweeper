@@ -1,0 +1,9 @@
+.root {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: var(--maxPageWidth);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: calc(var(--baseUnit) * 2);
+}

@@ -1,0 +1,55 @@
+.root {
+  width: 30px;
+  height: 30px;
+  background-color: var(--dark);
+  border: 1px solid var(--darkQuaternary);
+  padding: 0;
+  font-size: var(--fontSizeLarge);
+  font-weight: var(--fontWeightSemiBold);
+}
+
+.root:hover {
+  background-color: var(--darkSecondary);
+  cursor: pointer;
+}
+
+.root:disabled {
+  opacity: 1;
+  background-color: var(--dark);
+  border-color: var(--dark);
+  cursor: default;
+}
+
+.flagged,
+.flagged:hover,
+.flagged:disabled {
+  background-color: var(--accentSecondary);
+}
+
+.revealed,
+.revealed:hover,
+.revealed:disabled {
+  background-color: var(--darkQuaternary);
+  border-color: var(--darkQuaternary);
+  cursor: default;
+}
+
+.value1 {
+  color: dodgerblue;
+}
+
+.value2 {
+  color: green;
+}
+
+.value3 {
+  color: red;
+}
+
+.value4 {
+  color: yellow;
+}
+
+.value5 {
+  color: darkorange;
+}

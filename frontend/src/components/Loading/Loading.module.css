@@ -1,0 +1,7 @@
+.root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: calc(var(--baseUnit) * 1.5);
+  height: 100%;
+}
