@@ -1,6 +1,6 @@
 # Minesweeper
 
-![Minesweeper Screenshot](./public/minesweeper.png)
+![Minesweeper Screenshot](public/minesweeper.png)
 
 ## General Functionality
 
