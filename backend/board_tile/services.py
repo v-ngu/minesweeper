@@ -58,6 +58,7 @@ class BoardTileService:
             response_data = {
                 "tiles": [tile],
                 "flags_count": BoardTile.get_flagged_count(game_id),
+                "game_status": self.utils.check_victory(game_id),
             }
             return TileUpdatesSerializer(response_data)
 
